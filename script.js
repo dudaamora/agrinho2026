@@ -14,4 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
       item.classList.toggle('active');
     });
   });
+
+  const contactForm = document.getElementById('contactForm');
+  const formSuccess = document.getElementById('formSuccess');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      formSuccess.hidden = false;
+      contactForm.reset();
+      setTimeout(() => {
+        formSuccess.hidden = true;
+      }, 3800);
+    });
+  }
 });

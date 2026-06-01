@@ -34,7 +34,21 @@
         </div>
       </div>
       <div class="hero-visual">
+        <div class="hero-image">
+          <div class="image-shape image-sun"></div>
+          <div class="image-shape image-field"></div>
+          <div class="image-shape image-leaf"></div>
+        </div>
         <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 6v6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M24 36v6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M12 24h6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M30 24h6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="3"/>
+            </svg>
+          </div>
           <h2>Solo vivo</h2>
           <p>
             Nutrição, cobertura verde e práticas regenerativas que aumentam a produtividade
@@ -218,6 +232,33 @@
         </div>
       </section>
 
+      <section id="galeria" class="section section-light">
+        <div class="section-copy">
+          <p class="section-eyebrow">Galeria</p>
+          <h2>Imagens e ícones do campo sustentável</h2>
+          <p>
+            Visualize o futuro do agro com elementos gráficos que representam solo saudável, água protegida e produção equilibrada.
+          </p>
+        </div>
+        <div class="image-grid">
+          <article class="image-card">
+            <div class="image-graphic image-graphic-field"></div>
+            <h3>Campo fértil</h3>
+            <p>Ilustração de um solo forte e bem manejado, pronto para sustentar culturas saudáveis.</p>
+          </article>
+          <article class="image-card">
+            <div class="image-graphic image-graphic-water"></div>
+            <h3>Água conservada</h3>
+            <p>Representação visual de técnicas que protegem a água no solo e garantem mais segurança hídrica.</p>
+          </article>
+          <article class="image-card">
+            <div class="image-graphic image-graphic-leaf"></div>
+            <h3>Verde vivo</h3>
+            <p>Ícones de cobertura vegetal que simbolizam proteção e regeneração do solo.</p>
+          </article>
+        </div>
+      </section>
+
       <section id="depoimentos" class="section section-light">
         <div class="section-copy">
           <p class="section-eyebrow">Depoimentos</p>
@@ -287,16 +328,34 @@
             aplicar essas soluções na sua fazenda ou comunidade rural.
           </p>
         </div>
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h3>Fale conosco</h3>
-            <p>Email: contato@agroforte.com.br</p>
-            <p>Telefone: +55 11 99999-0000</p>
+        <div class="contact-layout">
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3>Fale conosco</h3>
+              <p>Email: contato@agroforte.com.br</p>
+              <p>Telefone: +55 11 99999-0000</p>
+            </div>
+            <div class="contact-card">
+              <h3>Agenda gratuita</h3>
+              <p>Analise técnica e plano de ação para manejo do solo em propriedades sustentáveis.</p>
+            </div>
           </div>
-          <div class="contact-card">
-            <h3>Agenda gratuita</h3>
-            <p>Analise técnica e plano de ação para manejo do solo em propriedades sustentáveis.</p>
-          </div>
+          <form class="contact-form" id="contactForm">
+            <label>
+              Nome
+              <input type="text" name="name" placeholder="Seu nome" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="seu@email.com" required />
+            </label>
+            <label>
+              Mensagem
+              <textarea name="message" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+            </label>
+            <button class="button" type="submit">Enviar mensagem</button>
+            <p class="form-success" id="formSuccess" hidden>Mensagem enviada com sucesso! Obrigado.</p>
+          </form>
         </div>
       </section>
 
